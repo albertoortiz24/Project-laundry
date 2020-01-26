@@ -1,0 +1,321 @@
+<!DOCTYPE html5>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Lavanderia</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+      <script src="main.js"></script>
+   </head>
+   <body>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg okuma-menu">
+         <a class="navbar-brand" href="#"><a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" height="50" alt="lavanderia-logo">
+         </a></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-center">
+               <li class="nav-item active">
+                  <a class="nav-link okuma-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link okuma-link" href="nosotros.html">Nosotros</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link okuma-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Servicios
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="contactus.html">Sucursales</a>
+                     <a class="dropdown-item" href="menu.html#lavado">Domicilio</a>
+                     <a class="dropdown-item" href="menu.html#promociones">Promociones</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link okuma-link" href="contactus.html">Contacto</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!--end of nav-->
+      <!--Cart Button--
+      <div class="btn menu-btn sticky-top order-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-cart-arrow-down"></i>
+      -->
+      <button class="btn btn-danger whatsapp" onclick="abrirWhatsapp()" >
+      <img class="imgwhat" src="img/logowhat.jpg" alt="" >
+      </button>
+      </div>
+      <div class="container">
+         <!--HERO SECTION-->
+         <div class="row">
+            <div class="col-md-12">
+               <img class="img-fluid" src="img/lavanderiacontacto.png" alt="sushi image">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4 offset-md-4 d-none d-sm-block main-header shadow-sm">
+               <h1>MENU</h1>
+            </div>
+         </div>
+         <!--MENU BUTTONS-->
+         <div class="row mt-md-3 mb-md-3">
+            <div class="col-md-12">
+               <a href="#promociones" class="btn btn-outline-danger active active-btn my-2 menu-btn">Promociones</a>
+               <a href="#lavado" class="btn btn-outline-danger menu-btn my-2">Lavado</a>
+               <a href="#secado" class="btn  btn-outline-danger menu-btn my-2">Secado</a>
+            </div>
+         </div>
+         <!--MENU SUSHI ITEMS-->
+         <div class="album py-3 bg-light" id="promociones">
+            <div class="container">
+               <div class="row">
+                  <!--item 1-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img src="img/prueba1.jpg" class="img-fluid " alt="imagenLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$130</h3>
+                              <p>Lavado de 15Kg + Secado</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 2-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba2.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$98</h3>
+                              <p>Lavado de 10Kg + Secado</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 3-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba3.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$105</h3>
+                              <p>Lavado 10 kg + Secado + Domicilio</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 4-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba1.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$150</h3>
+                              <p>Lavado 15KG + Secado + Domicilio</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 5-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba2.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$140</h3>
+                              <p>Lavado 15KG + Secado G</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 6-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba3.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$200</h3>
+                              <p>Lavado 15KG + Secado + Domicilio</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 7-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba1.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$180</h3>
+                              <p>Lavado 35kg + Secado</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <!--item 8-->
+                  <div class="col-md-3">
+                     <div class="ih-item square effect">
+                        <a href="#">
+                           <div class="img">
+                              <img class="img-fluid" src="img/prueba2.jpg" alt="imgLavanderia">
+                           </div>
+                           <div class="info">
+                              <h3>$250</h3>
+                              <p>Lavado 35KG + Secado + Domicilio</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!--end of row-->
+            </div>
+            <!--end of album-->
+         </div>
+         <!--PROMO section-->
+         <div class="row">
+         <div class="col-md-6 offset-md-3 mt-5 beverages">
+            <h2 class="text-center text-uppercase">Los Mejores Precios De La Zona</h2>
+         </div>
+      </div>
+         <div class="py-5 my-5 bg-light">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="mb-4 shadow-lg p-2 mb-5 effect from_left_and_right">
+                        <img class="card-img-top" src="img/prueba4.jpg" alt="ImgDiasDePromocion" style="height: 351px;">
+                     </div>
+                  </div>
+                  <!--item 2-->
+                  <div class="col-md-6">
+                     <div class="mb-4 shadow-lg p-2 mb-5">
+                        <img class="card-img-top" src="img/prueba5.jpg" alt="ImgDiasDePromocion">
+                     </div>
+                  </div>
+                  <!--end of the row-->
+               </div>
+            </div>
+            <!--MENU section-->
+            <div class="row">
+            <div class="col-md-6 offset-md-3 mt-md-3 mb-md-3 beverages" id="lavado">
+               <h3 class="text-center text-uppercase">Lavado</h3>
+            </div>
+         </div>
+            <div class="row">
+               <div class="col-md-6 p-5">
+                  <div class="menu-row">
+                     <h5 class="menu-title">10KG</h5>
+                     <span class="menu-line"></span>
+                     <span class="menu-price">$30</span>
+                  </div>
+                  <div class="menu-row">
+                     <h5>20KG</h5>
+                     <span class="menu-line"></span>
+                     <span class="menu-price">$60</span>
+                  </div>
+               </div>
+               <div class="col-md-6 p-5">
+                  <div class="menu-row">
+                     <h5>10Kg + Detergente</h5>
+                     <span class="menu-line"></span>
+                     <span class="menu-price">$42</span>
+                  </div>
+                  <div class="menu-row">
+                     <h5>20KG + Detergente</h5>
+                     <span class="menu-line"></span>
+                     <span class="menu-price">$72</span>
+                  </div>
+               </div>
+            </div>
+            <!--MENU section-->
+            <div class="row">
+            <div class="col-md-6 offset-md-3 mt-md-3 mb-md-3 beverages" id="secado">
+               <h3 class="text-center text-uppercase">Secado</h3>
+            </div>
+         </div>
+            <div class="row">
+               <div class="col-md-6 p-5">
+                  <div class="menu-row">
+                     <h5 class="menu-title">Carga Chica 15kg</h5>
+                     <span class="menu-line"></span>
+                     <span class="menu-price">$35</span>
+                  </div>
+               </div>
+               <div class="col-md-6 p-5">
+                  <div class="menu-row">
+                     <h5>Carga Grande</h5>
+                     <span class="menu-line"></span>
+                     <span class="menu-price">$70</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--top button-->
+         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+         <script>
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         document.getElementById("myBtn").style.display = "block";
+         } else {
+         document.getElementById("myBtn").style.display = "none";
+         }
+         }
+         
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+         }
+         </script>
+         
+               </div>
+               <!--end of general container-->
+            </div>
+            <!--FOOTER-->
+            <footer class="footer col-md-12">
+               <div class=" col-md-6"><p class="social-text">Todos los derechos reservados. Designed by <a href="mailto:gokuTeam@gmail.com"> @A.Ortiz</a></p>
+            </div>
+            <div class="col-md-6 social list-inline float-right">
+               <!--Social Media-->
+               <ul>
+                  <li class="list-inline-item"><a href=""><img src="img/facebook.svg" alt="www.facebook.com" width="40" height="40"></a></li>
+                  <li class="list-inline-item"><img src="img/twitter.svg" alt="twitter.com" width="40" height="40"></li>
+                  <li class="list-inline-item"><img src="img/instagram.svg" alt="instagram.com" width="40" height="40"></li>
+               </ul>
+            </div>
+      </footer>
+      
+                
+                  
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   </body>
+</html>
